@@ -28,11 +28,15 @@ header{
     position: relative;
     padding-top: 2em;
     overflow: hidden;
+    .header-tablet-bg, .header-tablet-object{
+        display: none;
+    }
     .header-mobile-bg{
         position: absolute;
         top: -200px;
         left: 40px;
     }
+    
     .hero-text{
         margin-top: 2em;
         font-family: "IBM Plex Sans", sans-serif;
@@ -135,3 +139,77 @@ footer{
     }
 }
 
+// Media
+
+//Tablet
+
+@media (min-width:768px) {
+    .wrapper{
+        max-width: 1200px;
+    }
+    header{
+        height: 628px;
+        .header-mobile-bg{
+            display: none;
+        }
+        .header-tablet-bg{
+            display: block;
+            position: absolute;
+            top: -400px;
+            right: -250px;
+        }
+        .header-tablet-object{
+            display: block;
+            position: absolute;
+            top: -50px;
+            right: -60px;
+            width: 180px;
+            z-index: 100;
+        }
+        .hero-text{
+            margin-top: 5em;
+            .hero-title{
+                font-size: 4rem;
+                width: 70%;
+                line-height: 1em;
+            }
+            .hero-paragraph{
+                width: 70%;
+                line-height: 1.4em;
+            }
+        }
+    }
+    main{
+        .phone-separator{
+            .phone-img{
+                top: -120px;
+                left: 100px;
+                transform:none;
+            }
+            .separator-bg-box{
+                display: flex;
+                margin: auto;
+                width: 85%;
+                max-width: 1200px;
+                height: 100%;
+                border-radius: 15px;
+                img{
+                    margin-left: 0;
+                    margin-bottom: 5em;
+                    width: 35%;
+                }
+            }
+        }
+        .premium-area{
+            position: absolute;
+            top: 50px;
+            right: 180px;
+            width: 320px;
+            border-radius: 20px;
+            
+        }
+        margin-bottom: 15em;
+    }
+
+    
+}

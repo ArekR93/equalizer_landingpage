@@ -22,6 +22,9 @@ header {
   padding-top: 2em;
   overflow: hidden;
 }
+header .header-tablet-bg, header .header-tablet-object {
+  display: none;
+}
 header .header-mobile-bg {
   position: absolute;
   top: -200px;
@@ -123,4 +126,70 @@ footer .icon-box {
 }
 footer .icon-box img {
   margin-right: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  header {
+    height: 628px;
+  }
+  header .header-mobile-bg {
+    display: none;
+  }
+  header .header-tablet-bg {
+    display: block;
+    position: absolute;
+    top: -400px;
+    right: -250px;
+  }
+  header .header-tablet-object {
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    width: 180px;
+    z-index: 100;
+  }
+  header .hero-text {
+    margin-top: 5em;
+  }
+  header .hero-text .hero-title {
+    font-size: 4rem;
+    width: 70%;
+    line-height: 1em;
+  }
+  header .hero-text .hero-paragraph {
+    width: 70%;
+    line-height: 1.4em;
+  }
+  main {
+    margin-bottom: 15em;
+  }
+  main .phone-separator .phone-img {
+    top: -120px;
+    left: 100px;
+    transform: none;
+  }
+  main .phone-separator .separator-bg-box {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    max-width: 1200px;
+    height: 100%;
+    border-radius: 15px;
+  }
+  main .phone-separator .separator-bg-box img {
+    margin-left: 0;
+    margin-bottom: 5em;
+    width: 35%;
+  }
+  main .premium-area {
+    position: absolute;
+    top: 50px;
+    right: 180px;
+    width: 320px;
+    border-radius: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
