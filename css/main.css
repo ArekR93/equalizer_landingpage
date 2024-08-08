@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62, 5%;
+}
+
+.wrapper {
+  margin: auto;
+  width: 85%;
+  max-width: 335px;
+}
+
+header {
+  height: 504px;
+  position: relative;
+  padding-top: 2em;
+}
+header .header-mobile-bg {
+  position: absolute;
+  top: -200px;
+  left: 40px;
+}
+header .hero-text {
+  margin-top: 2em;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+header .hero-text .hero-title {
+  line-height: 30px;
+}
+header .hero-text .hero-paragraph {
+  margin-top: 2em;
+}
+
+main {
+  position: relative;
+}
+main .phone-separator .phone-img {
+  width: 209px;
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .phone-separator .separator-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  background-color: #191826;
+  height: 340px;
+}/*# sourceMappingURL=main.css.map */
