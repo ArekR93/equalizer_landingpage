@@ -27,6 +27,7 @@ header{
     height: 504px;
     position: relative;
     padding-top: 2em;
+    overflow: hidden;
     .header-mobile-bg{
         position: absolute;
         top: -200px;
@@ -60,6 +61,76 @@ main{
             margin-top: 2em;
             background-color: $slate;
             height: 340px;
+            overflow: hidden;
+
+
+        }
+    }
+    .premium-area{
+        padding-top: 2em;
+        height: 525px;
+        background-color: $orange;
+        .premium-title{
+            font-family: "IBM Plex Sans", sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: .8em;
+        }
+        .premium-description{
+            font-size: .9rem;
+            line-height: 1.3em;
+            margin-bottom: 2em;
+        }
+        .pricing{
+            display: flex;
+            align-items: center;
+            font-family: "IBM Plex Sans", sans-serif;
+            margin-bottom: 3em;
+            .price{
+                font-size: 3rem;
+                font-weight: bold;
+                margin-right: .5em;
+            }
+        }
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            .btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1em;
+                padding: 1em 2em;
+                border-radius: 10px;
+                border: none;
+                font-family: "IBM Plex Sans", sans-serif;
+                font-weight: bold;
+                img{
+                    margin-right: .5em;
+                }
+
+            }
+            .ios-btn{
+                background-color: $slate;
+                color: $white;
+            }
+        }
+    }
+}
+footer{
+    margin-top: 2em;
+    .footer-logo{
+        margin-bottom: 1.5em;
+    }
+    .footer-description{
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: .95rem;
+        line-height: 1.2em;
+        margin-bottom: 1.5em;
+    }
+    .icon-box{
+        margin-bottom: 2em;
+        img{
+            margin-right: 1.5em;
         }
     }
 }

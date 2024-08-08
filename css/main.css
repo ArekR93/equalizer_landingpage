@@ -20,6 +20,7 @@ header {
   height: 504px;
   position: relative;
   padding-top: 2em;
+  overflow: hidden;
 }
 header .header-mobile-bg {
   position: absolute;
@@ -54,4 +55,72 @@ main .phone-separator .separator-bg {
   margin-top: 2em;
   background-color: #191826;
   height: 340px;
+  overflow: hidden;
+}
+main .premium-area {
+  padding-top: 2em;
+  height: 525px;
+  background-color: #fa7453;
+}
+main .premium-area .premium-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.8em;
+}
+main .premium-area .premium-description {
+  font-size: 0.9rem;
+  line-height: 1.3em;
+  margin-bottom: 2em;
+}
+main .premium-area .pricing {
+  display: flex;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin-bottom: 3em;
+}
+main .premium-area .pricing .price {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+main .premium-area .buttons {
+  display: flex;
+  flex-direction: column;
+}
+main .premium-area .buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  padding: 1em 2em;
+  border-radius: 10px;
+  border: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+}
+main .premium-area .buttons .btn img {
+  margin-right: 0.5em;
+}
+main .premium-area .buttons .ios-btn {
+  background-color: #191826;
+  color: #fcfaf9;
+}
+
+footer {
+  margin-top: 2em;
+}
+footer .footer-logo {
+  margin-bottom: 1.5em;
+}
+footer .footer-description {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.2em;
+  margin-bottom: 1.5em;
+}
+footer .icon-box {
+  margin-bottom: 2em;
+}
+footer .icon-box img {
+  margin-right: 1.5em;
 }/*# sourceMappingURL=main.css.map */
