@@ -208,6 +208,7 @@ footer{
             top: 50px;
             right: 180px;
             width: 320px;
+            height: 550px;
             border-radius: 20px;
             
         }
@@ -229,5 +230,116 @@ footer{
         }
     }
 
+    
+}
+
+//Desktop
+@media (min-width: 1200px) {
+    header{
+        .header-mobile-bg{
+            display: none;
+        }
+        .header-tablet-bg{
+            right: 0px;
+        }
+        .header-tablet-object{
+            top: -40px;
+            right: 0px;
+            width: 280px;
+        }
+        .hero-text{
+            margin-top: 5em;
+            .hero-title{
+                font-size: 5rem;
+            }
+            .hero-paragraph{
+                font-size: 1.5rem;
+
+            }
+        }
+    }
+    .desktop-wrapper{
+            margin: auto;
+            width: 85%;
+            max-width: 1200px;
+    }
+    main{
+        .phone-separator{
+            .phone-img{
+                width: 370px;
+                height: 800px;
+                top: -120px;
+                left: 90px;
+            }
+            .separator-bg-box{
+                width: 100%;
+                img{
+                    margin: auto;
+                    margin-bottom: 8em;
+                    width: 35%;
+                }
+            }
+        }
+        .premium-area{
+            position: absolute;
+            top: 130px;
+            right: 80px;
+            width: 500px;
+            border-radius: 20px;
+            height: 750px;
+            .premium-title{
+                font-family: "IBM Plex Sans", sans-serif;
+                font-size: 2.5rem;
+                margin-bottom: 1.2em;
+            }
+            .premium-description{
+                font-size: 1.5rem;
+                line-height: 1.4em;
+                margin-bottom: 3em;
+            }
+            .pricing{
+                margin-bottom: 4.5em;
+                .price{
+                    font-size: 5rem;
+                }
+                .time{
+                    font-size: 1.5rem;
+                }
+            }
+            .buttons{
+                .btn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2em 3em;
+                    transition: background-color .4s, color .4s;
+                }
+
+                .ios-btn:hover{
+                    background-color: $cyan;
+                    color:$slate;     
+                }
+                .android-btn:hover{
+                    background-color: $yellow;
+                }
+                
+            }
+        }
+    }
+
+    footer{
+        margin-top: 15em;
+        .footer-box{
+            align-items: center;
+            .footer-logo, .footer-description {
+                width: 30%;
+            }
+            .icon-box{
+                img:hover{
+                    fill:$orange;
+                }
+            }
+        }
+    }
     
 }

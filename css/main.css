@@ -193,6 +193,7 @@ footer .icon-box img {
     top: 50px;
     right: 180px;
     width: 320px;
+    height: 550px;
     border-radius: 20px;
   }
   .footer-box {
@@ -208,5 +209,99 @@ footer .icon-box img {
   .footer-box .icon-box {
     align-self: center;
     margin-left: 7em;
+  }
+}
+@media (min-width: 1200px) {
+  header .header-mobile-bg {
+    display: none;
+  }
+  header .header-tablet-bg {
+    right: 0px;
+  }
+  header .header-tablet-object {
+    top: -40px;
+    right: 0px;
+    width: 280px;
+  }
+  header .hero-text {
+    margin-top: 5em;
+  }
+  header .hero-text .hero-title {
+    font-size: 5rem;
+  }
+  header .hero-text .hero-paragraph {
+    font-size: 1.5rem;
+  }
+  .desktop-wrapper {
+    margin: auto;
+    width: 85%;
+    max-width: 1200px;
+  }
+  main .phone-separator .phone-img {
+    width: 370px;
+    height: 800px;
+    top: -120px;
+    left: 90px;
+  }
+  main .phone-separator .separator-bg-box {
+    width: 100%;
+  }
+  main .phone-separator .separator-bg-box img {
+    margin: auto;
+    margin-bottom: 8em;
+    width: 35%;
+  }
+  main .premium-area {
+    position: absolute;
+    top: 130px;
+    right: 80px;
+    width: 500px;
+    border-radius: 20px;
+    height: 750px;
+  }
+  main .premium-area .premium-title {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.2em;
+  }
+  main .premium-area .premium-description {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    margin-bottom: 3em;
+  }
+  main .premium-area .pricing {
+    margin-bottom: 4.5em;
+  }
+  main .premium-area .pricing .price {
+    font-size: 5rem;
+  }
+  main .premium-area .pricing .time {
+    font-size: 1.5rem;
+  }
+  main .premium-area .buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 3em;
+    transition: background-color 0.4s, color 0.4s;
+  }
+  main .premium-area .buttons .ios-btn:hover {
+    background-color: #66e2dc;
+    color: #191826;
+  }
+  main .premium-area .buttons .android-btn:hover {
+    background-color: #ffb964;
+  }
+  footer {
+    margin-top: 15em;
+  }
+  footer .footer-box {
+    align-items: center;
+  }
+  footer .footer-box .footer-logo, footer .footer-box .footer-description {
+    width: 30%;
+  }
+  footer .footer-box .icon-box img:hover {
+    fill: #fa7453;
   }
 }/*# sourceMappingURL=main.css.map */
