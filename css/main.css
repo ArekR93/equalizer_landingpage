@@ -121,6 +121,9 @@ footer .footer-description {
   line-height: 1.2em;
   margin-bottom: 1.5em;
 }
+footer .footer-description .footer-bold {
+  font-weight: bold;
+}
 footer .icon-box {
   margin-bottom: 2em;
 }
@@ -191,5 +194,19 @@ footer .icon-box img {
     right: 180px;
     width: 320px;
     border-radius: 20px;
+  }
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-box .footer-logo {
+    margin-right: 10em;
+  }
+  .footer-box .footer-description {
+    width: 60%;
+  }
+  .footer-box .icon-box {
+    align-self: center;
+    margin-left: 7em;
   }
 }/*# sourceMappingURL=main.css.map */
